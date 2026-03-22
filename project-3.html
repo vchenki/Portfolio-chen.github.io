@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>随手记 - Case Study</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="project-3">
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">T. Chen</a>
+      <nav>
+        <a href="index.html">Index</a>
+        <a href="project-1.html">专注盲盒</a>
+        <a href="project-2.html">物栈</a>
+        <a href="project-3.html" class="active">随手记</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="case-page">
+      <a href="index.html" class="case-back">Back to Index</a>
+
+      <div class="case-header">
+        <div class="case-meta">
+          <span class="case-type">AI Note Workflow</span>
+          <span class="case-role">Independent · Design + Full-stack</span>
+        </div>
+        <h1>随手记</h1>
+        <p class="case-subtitle">一个从多元录入到 AI 整理的本地优先笔记工具，支持 OCR 录入与智能摘要处理，实现「录入 → 处理 → 输出」的完整链路。</p>
+        <div class="case-tags">
+          <span class="tag">OCR</span>
+          <span class="tag">AI 处理</span>
+          <span class="tag">Python Flask</span>
+          <span class="tag">本地存储</span>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Problem & Solution</p>
+        <div class="problem-solution">
+          <div class="ps-block">
+            <div class="ps-label">Problem</div>
+            <p>碎片化的想法和资料散落在微信、备忘录、截图、语音里，事后找不到、没法整理、也无法形成积累。普通的笔记工具只解决了「存」，没有解决「处理」和「输出」。</p>
+          </div>
+          <div class="ps-block">
+            <div class="ps-label">Solution</div>
+            <p>围绕「录入 → 处理 → 输出」的完整流程设计，支持图片 OCR、语音转文字等多元录入，通过 AI 自动摘要与标签体系，让碎片信息变为可检索、可复用的知识资产。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Core Workflow</p>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="fs-num">Step 01</div>
+            <div class="fs-icon">📝</div>
+            <div class="fs-title">多元录入</div>
+            <div class="fs-desc">文字、图片、语音皆可快速记录，OCR 自动识别图片内容</div>
+          </div>
+          <div class="flow-step">
+            <div class="fs-num">Step 02</div>
+            <div class="fs-icon">🧠</div>
+            <div class="fs-title">AI 整理</div>
+            <div class="fs-desc">自动生成摘要、提取标签、建立笔记间关联</div>
+          </div>
+          <div class="flow-step">
+            <div class="fs-num">Step 03</div>
+            <div class="fs-icon">📤</div>
+            <div class="fs-title">结构化输出</div>
+            <div class="fs-desc">按标签、时间、项目多维检索，支持导出</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Key Interfaces</p>
+        <div class="media-grid">
+          <div class="media-card">
+            <div class="mc-media">
+              <img src="assets/media/project-3/note-example.png" alt="记录界面">
+            </div>
+            <div class="mc-label">输入 / 记录界面</div>
+            <div class="mc-desc">文字、图片多元录入，OCR 自动识别图片内容</div>
+          </div>
+          <div class="media-card">
+            <div class="mc-media">
+              <img src="assets/media/project-3/note-result.png" alt="AI处理结果">
+            </div>
+            <div class="mc-label">AI 总结与结果展示</div>
+            <div class="mc-desc">自动生成摘要、提取标签，建立笔记间关联</div>
+          </div>
+          <div class="media-card">
+            <div class="mc-media">
+              <video preload="metadata" playsinline controls>
+                <source src="assets/media/project-3/note-demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="mc-label">页面流程演示</div>
+            <div class="mc-desc">从录入到 AI 整理的全流程操作演示</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Core Features</p>
+        <ul class="highlight-list">
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>多元录入</strong> — 文字、图片、语音多种形式，支持剪贴板直接粘贴</div>
+          </li>
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>OCR 识别</strong> — Tesseract 引擎自动识别图片中的文字，可编辑修正</div>
+          </li>
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>AI 摘要</strong> — 接入大模型 API，对长文本自动生成结构化摘要</div>
+          </li>
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>智能标签</strong> — 基于内容分析自动建议分类标签，支持手动调整</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">My Contribution</p>
+        <div class="contrib-grid">
+          <div class="contrib-item">
+            <div class="ci-label">Role</div>
+            <div class="ci-value">独立产品设计与全栈开发</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Core Work</div>
+            <div class="ci-value">流程设计、后端架构、前端实现</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Tech Stack</div>
+            <div class="ci-value">Flask + Tesseract + LLM API</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Delivery</div>
+            <div class="ci-value">本地 Python 服务 + Web 前端</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Technical Decisions</p>
+        <ul class="highlight-list">
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>本地优先</strong> — 所有数据存储在 SQLite，不上云，保护隐私</div>
+          </li>
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>Flask 轻量后端</strong> — 足够小的团队规模，不需要重型框架</div>
+          </li>
+          <li>
+            <div class="hl-icon">◈</div>
+            <div class="hl-text"><strong>AI 能力解耦</strong> — LLM API 调用独立封装，方便后续切换模型</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Reflection</p>
+        <div class="reflection-grid">
+          <div class="reflection-card">
+            <div class="rc-label">What Worked</div>
+            <ul>
+              <li>OCR + AI 摘要的组合在实际使用中大幅节省了整理时间</li>
+              <li>本地优先策略让用户对数据完全可控</li>
+              <li>标签体系支撑了半年后的功能迭代</li>
+            </ul>
+          </div>
+          <div class="reflection-card">
+            <div class="rc-label">Next Steps</div>
+            <ul>
+              <li>图片较多时存储体积增长过快，需要压缩或 CDN 方案</li>
+              <li>搜索能力弱，中文分词精度不足</li>
+              <li>缺乏移动端适配，录入体验受限</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-footer">
+        <a href="index.html" class="cfn-link">← Back to Index</a>
+        <a href="project-2.html" class="cfn-link">← 物栈</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Selected works only</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-credit">vincentkianchen@gmail.com</span>
+        <span class="footer-sep">/</span>
+        <span class="footer-credit">654806608@qq.com</span>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

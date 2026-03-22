@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物栈 - Case Study</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="project-2">
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">T. Chen</a>
+      <nav>
+        <a href="index.html">Index</a>
+        <a href="project-1.html">专注盲盒</a>
+        <a href="project-2.html" class="active">物栈</a>
+        <a href="project-3.html">随手记</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="case-page">
+      <a href="index.html" class="case-back">Back to Index</a>
+
+      <div class="case-header">
+        <div class="case-meta">
+          <span class="case-type">Asset Management</span>
+          <span class="case-role">Independent · Design + Full-stack</span>
+        </div>
+        <h1>物栈</h1>
+        <p class="case-subtitle">一个帮助用户系统化管理长期物品与资产的信息工具，围绕「物品 → 分类 → 位置 → 提醒」的核心关系建模。</p>
+        <div class="case-tags">
+          <span class="tag">信息架构</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">数据可视化</span>
+          <span class="tag">本地存储</span>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Problem & Solution</p>
+        <div class="problem-solution">
+          <div class="ps-block">
+            <div class="ps-label">Problem</div>
+            <p>随着物品增多，"东西放哪了""这个还需要吗""什么时候买的"成为日常痛点。电子表格无法表达位置关系和分类层级，通用笔记工具又缺乏物品管理所需的专业字段。</p>
+          </div>
+          <div class="ps-block">
+            <div class="ps-label">Solution</div>
+            <p>围绕「物品 → 分类 → 位置 → 提醒」的核心关系建模，提供结构化的物品录入、多维检索与可视化统计，让用户真正掌控自己的物品资产。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Key Interfaces</p>
+        <div class="media-grid">
+          <div class="media-card">
+            <div class="mc-media">
+              <img src="assets/media/project-2/wuzhan-home.png" alt="首页总览界面">
+            </div>
+            <div class="mc-label">首页 / 总览界面</div>
+            <div class="mc-desc">物品分类统计、位置分布与提醒事项一目了然</div>
+          </div>
+          <div class="media-card">
+            <div class="mc-media">
+              <img src="assets/media/project-2/分类.png" alt="分类管理界面">
+            </div>
+            <div class="mc-label">分类管理 / 物品组织</div>
+            <div class="mc-desc">多级分类体系与标签组织，支持更清晰的物品归类与检索</div>
+          </div>
+          <div class="media-card">
+            <div class="mc-media">
+              <img src="assets/media/project-2/统计分析.png" alt="数据分析界面">
+            </div>
+            <div class="mc-label">数据分析 / 统计视图</div>
+            <div class="mc-desc">通过图表查看数量分布、价值估算与使用频率，辅助长期管理决策</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Core Features</p>
+        <ul class="highlight-list">
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>多级分类体系</strong> — 支持父类 / 子类 / 标签三层结构，适应不同整理维度</div>
+          </li>
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>空间位置标记</strong> — 以「区域 → 具体位置」的层级记录物品存放位置</div>
+          </li>
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>主动提醒系统</strong> — 基于时间或使用频率提醒维护，防止遗忘</div>
+          </li>
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>统计分析面板</strong> — 数量、分类分布、价值估算等数据一目了然</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">My Contribution</p>
+        <div class="contrib-grid">
+          <div class="contrib-item">
+            <div class="ci-label">Role</div>
+            <div class="ci-value">独立产品设计与全栈开发</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Core Work</div>
+            <div class="ci-value">需求分析、信息架构设计、UI / 前端实现</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Tech Stack</div>
+            <div class="ci-value">Next.js + Zustand + SQLite</div>
+          </div>
+          <div class="contrib-item">
+            <div class="ci-label">Delivery</div>
+            <div class="ci-value">Web 应用，支持本地部署</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Technical Decisions</p>
+        <ul class="highlight-list">
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>本地 SQLite</strong> — 所有数据本地存储，无隐私风险，支持离线使用</div>
+          </li>
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>ECharts 可视化</strong> — 复用成熟图表库，快速实现统计面板</div>
+          </li>
+          <li>
+            <div class="hl-icon">◆</div>
+            <div class="hl-text"><strong>CSV 导入导出</strong> — 降低数据迁移成本，用户不被工具绑定</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-section">
+        <p class="section-label">Reflection</p>
+        <div class="reflection-grid">
+          <div class="reflection-card">
+            <div class="rc-label">What Worked</div>
+            <ul>
+              <li>信息架构设计满足了一年内迭代的功能扩展需求</li>
+              <li>位置 + 分类双维检索在实际使用中很好用</li>
+              <li>提醒系统的触发逻辑足够灵活</li>
+            </ul>
+          </div>
+          <div class="reflection-card">
+            <div class="rc-label">Next Steps</div>
+            <ul>
+              <li>移动端适配体验较差，响应式需要重做</li>
+              <li>缺乏批量操作，录入效率低</li>
+              <li>图片管理能力弱，物品照片存储方案需优化</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-footer">
+        <a href="index.html" class="cfn-link">← Back to Index</a>
+        <div class="case-footer-nav">
+          <a href="project-1.html" class="cfn-link">← 专注盲盒</a>
+          <a href="project-3.html" class="cfn-link">随手记 →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Selected works only</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-credit">vincentkianchen@gmail.com</span>
+        <span class="footer-sep">/</span>
+        <span class="footer-credit">654806608@qq.com</span>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
